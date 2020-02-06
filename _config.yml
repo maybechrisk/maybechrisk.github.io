@@ -3,9 +3,6 @@ plugins:
 
 title: 코딩합니다 
 description:
-    <a href="https://wordpress.org/themes/twentysixteen/" rel="external">Wordpress 2016 theme</a>
-    in <a href="https://jekyllrb.com/" rel="external">Jekyll</a>
-
 paginate: 10
 paginate_path: /page/:num/
 permalink: /:title/

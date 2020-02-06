@@ -4,4 +4,4 @@ title: java third
 categories: java
 ---
 
-1. 자바 프로그래밍 1
+3. 자바 때리기
