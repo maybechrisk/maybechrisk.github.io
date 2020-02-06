@@ -1,10 +1,10 @@
 - title: About
   href: /about/
 - title: JAVA
-  href: /java/java/
+  href: /java
   children:
     - title: JAVA
-      href: /java/java/
+      href: /java
     - title: SPRING BOOT
       href: /java/springboot/
     - title: JPA 

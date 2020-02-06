@@ -40,22 +40,22 @@
 	</header>
 	<main>{{ content }}</main>
 	<aside>
-		<section>
-			<h2>Categories</h2>
-			<ul>
-				{% assign categories = site.categories | sort %}
-				{% for category in categories %}
-					<li><a href="{{ site.baseurl }}/category/{{ category[0] | slugify | uri_escape }}">{{ category[0] }}</a></li>
-				{% endfor %}
-			</ul>
-		</section>
-		<section class="tagcloud">
-			<h2>Tags</h2>
-			{% assign tags = site.tags | sort %}
-			{% for tag in tags %}
-				<a href="{{ site.baseurl }}/tag/{{ tag[0] | slugify | uri_escape }}">{{ tag[0] }}</a>
-			{% endfor %}
-		</section>
+<!-- 		<section>
+	<h2>Categories</h2>
+	<ul>
+		{% assign categories = site.categories | sort %}
+		{% for category in categories %}
+			<li><a href="{{ site.baseurl }}/category/{{ category[0] | slugify | uri_escape }}">{{ category[0] }}</a></li>
+		{% endfor %}
+	</ul>
+</section> -->
+<!-- 		<section class="tagcloud">
+	<h2>Tags</h2>
+	{% assign tags = site.tags | sort %}
+	{% for tag in tags %}
+		<a href="{{ site.baseurl }}/tag/{{ tag[0] | slugify | uri_escape }}">{{ tag[0] }}</a>
+	{% endfor %}
+</section> -->
 		<section>
 			<h2>Recent posts</h2>
 			<ul>
