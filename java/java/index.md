@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: category
 title: JAVA
 ---
-JAVA PAGE
+자바 관련 카테고리입니다
