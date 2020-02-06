@@ -14,6 +14,7 @@
 		<title>{{ page.title }} – {{ site.title }}</title>
 	{% endif %}
 
+	<link rel="alternate" hreflang="zh" href="https://jdh8.org{{ page.url }}">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:,i,b,bi,900,900i%7CMontserrat:,b%7CInconsolata:,b&amp;display=swap">
 	<link rel="stylesheet" href="{{ site.baseurl }}/style/main.css">
@@ -30,7 +31,7 @@
 <body>
 	<header>
 		<div class="brand">
-			<h1><a href="{{ site.baseurl }}/" rel="home">{{ site.title }}</a></h1>
+			<h1><a href="{{ site.baseurl }}/" rel="home">{{ layout.title | default: site.title }}</a></h1>
 			<p>{{ site.description }}</p>
 		</div>
 		<input hidden type="checkbox" id="ballot">
@@ -39,22 +40,22 @@
 	</header>
 	<main>{{ content }}</main>
 	<aside>
-<!-- 		<section>
-	<h2>Categories</h2>
-	<ul>
-		{% assign categories = site.categories | sort %}
-		{% for category in categories %}
-			<li><a href="{{ site.baseurl }}/category/{{ category[0] | slugify | uri_escape }}">{{ category[0] }}</a></li>
-		{% endfor %}
-	</ul>
-</section> -->
-<!-- 		<section class="tagcloud">
-	<h2>Tags</h2>
-	{% assign tags = site.tags | sort %}
-	{% for tag in tags %}
-		<a href="{{ site.baseurl }}/tag/{{ tag[0] | slugify | uri_escape }}">{{ tag[0] }}</a>
-	{% endfor %}
-</section> -->
+		<section>
+			<h2>Categories</h2>
+			<ul>
+				{% assign categories = site.categories | sort %}
+				{% for category in categories %}
+					<li><a href="{{ site.baseurl }}/category/{{ category[0] | slugify | uri_escape }}">{{ category[0] }}</a></li>
+				{% endfor %}
+			</ul>
+		</section>
+		<section class="tagcloud">
+			<h2>Tags</h2>
+			{% assign tags = site.tags | sort %}
+			{% for tag in tags %}
+				<a href="{{ site.baseurl }}/tag/{{ tag[0] | slugify | uri_escape }}">{{ tag[0] }}</a>
+			{% endfor %}
+		</section>
 		<section>
 			<h2>Recent posts</h2>
 			<ul>

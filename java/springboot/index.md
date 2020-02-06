@@ -1,5 +1,5 @@
 ---
-layout: page
-title: SPRING
+layout: category
+title: SPRINGBOOT
 ---
-SPRING
+스프링부트 내용

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: category
 title: JPA
 ---
-JPA
+JPA 내용
