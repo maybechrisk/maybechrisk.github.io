@@ -3,11 +3,11 @@
 - title: JAVA
   href: /java/
   children:
-    - title: JAVA
+    - title: JAVA 자바
       href: /java/java/
-    - title: SPRING BOOT
+    - title: SPRING BOOT 스프링부트
       href: /java/springboot/
-    - title: JPA
+    - title: JPA 
       href: /java/jpa/
 - title: FRONT
   href: /front/
@@ -22,5 +22,26 @@
       href: /front/react
     - title: Angular
       href: /front/angular
-
+- title: DATA
+  href: /dacasciensc/
+  children:
+    - title: database
+      href: /datasciensc/database/
+    - title: Excel
+      href: /datasciensc/excel/
+    - title: R
+      href: /datasciensc/r
+    - title: Python
+      href: /datasciensc/python
+- title: CS
+  href: /computersc/
+  children:
+    - title: SECURITY
+      href: /computersc/security/
+    - title: OS
+      href: /computersc/os
+    - title: SOFTWARE ENGINEERING
+      href: /computersc/se
+    - title: NETWORK
+      href: /computersc/network
 
