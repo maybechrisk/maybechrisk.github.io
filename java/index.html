@@ -1,10 +1,4 @@
 ---
-layout: page
-title: JAVA
+layout: category
+title: java
 ---
-{% assign entry = site.data.menu | where: "href", page.url %}
-{% assign children = entry[0].children %}
-<nav>{% include menu.liquid list=children %}</nav>
-{% comment %}
-vim: filetype=liquid
-{% endcomment %}
